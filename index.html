@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pawfect Companions - New York’s trusted pet shop for quality pet supplies, grooming, and care services. Visit us for everything your furry friend needs!" />
+  <title>Pawfect Companions | Pet Shop in New York</title>
+  <style>
+    /* ======== BASIC RESET ======== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ff7f50;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #444;
+    }
+
+    /* ======== CONTAINER ======== */
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* ======== HERO ======== */
+    header {
+      background: url('https://images.unsplash.com/photo-1558944351-cf23a0a6dfae?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      background: #ff7f50;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 25px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e76f3c;
+    }
+
+    /* ======== SERVICES ======== */
+    .services {
+      padding: 60px 0;
+      background: #f8f8f8;
+    }
+
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .service {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+      flex: 1 1 250px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .service h3 {
+      margin-bottom: 0.5rem;
+      color: #ff7f50;
+    }
+
+    /* ======== PRODUCTS ======== */
+    .products {
+      padding: 60px 0;
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 2rem;
+    }
+
+    .product {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      overflow: hidden;
+      background: white;
+      text-align: center;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product h4 {
+      margin: 1rem 0 0.5rem;
+      color: #444;
+    }
+
+    .product p {
+      color: #777;
+      margin-bottom: 1rem;
+    }
+
+    /* ======== TESTIMONIALS ======== */
+    .testimonials {
+      background: #fffcf8;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .testimonial-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 2rem;
+    }
+
+    .testimonial {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+      max-width: 300px;
+    }
+
+    .testimonial p {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .testimonial h4 {
+      color: #ff7f50;
+      font-weight: 600;
+    }
+
+    /* ======== CONTACT ======== */
+    .contact {
+      padding: 60px 0;
+      background: #f8f8f8;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background: #ff7f50;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background: #e76f3c;
+    }
+
+    /* ======== FOOTER ======== */
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #222;
+      color: white;
+    }
+
+    /* ======== RESPONSIVE ======== */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .service-list {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======== HERO SECTION ======== -->
+  <header>
+    <h1>Pawfect Companions</h1>
+    <p>New York’s Favorite Pet Shop for Grooming, Food, and Care</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </header>
+
+  <!-- ======== SERVICES ======== -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <div class="service">
+          <h3>🐶 Grooming</h3>
+          <p>Professional grooming for a clean, stylish, and happy pet.</p>
+        </div>
+        <div class="service">
+          <h3>🏠 Boarding</h3>
+          <p>Safe and cozy overnight stays while you’re away.</p>
+        </div>
+        <div class="service">
+          <h3>🎓 Training</h3>
+          <p>Gentle, effective lessons for better behavior and bonding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PRODUCTS ======== -->
+  <section class="products" id="products">
+    <div class="container">
+      <h2>Popular Products</h2>
+      <div class="product-list">
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1601758123927-196d71a57a49?auto=format&fit=crop&w=600&q=80" alt="Dog Food">
+          <h4>Organic Dog Food</h4>
+          <p>Healthy and delicious meals for your pup.</p>
+        </div>
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1598136490936-3be8c72a1f55?auto=format&fit=crop&w=600&q=80" alt="Cat Toy">
+          <h4>Interactive Cat Toy</h4>
+          <p>Keep your cat active and entertained all day long.</p>
+        </div>
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=80" alt="Pet Collar">
+          <h4>Stylish Pet Collar</h4>
+          <p>Comfortable, durable, and fashion-forward.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== TESTIMONIALS ======== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-list">
+        <div class="testimonial">
+          <p>"Best pet shop in NYC! My dog Luna loves their treats and grooming."</p>
+          <h4>- Emily R.</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Friendly staff and amazing products. My cat can’t get enough!"</p>
+          <h4>- Carlos M.</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Clean shop, quality service, and true animal lovers. Highly recommend!"</p>
+          <h4>- Jenna P.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTACT FORM ======== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <form action="#" method="post">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer>
+    <p>🐾 Pawfect Companions | 123 Main Street, New York, NY 10001 | (212) 555-PETS</p>
+    <p>&copy; 2025 Pawfect Companions. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
